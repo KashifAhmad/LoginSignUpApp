@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="spinner_base_color">#44000000</color>
+    <color name="spinner_hint_text_color">#ffffcc</color>
+    <color name="base">#303F9F</color>
+    <color name="highlight">#00E5FF</color>
+    <color name="error">#ff0000</color>
+    <color name="hint">#E65100</color>
+    <color name="arrow">#FFDA44</color>
+    <color name="floating_label">#009688</color>
+    <color name="colorOrange">#f5c669</color>
+    <color name="colorLightRed">#e56c6c</color>
+    <color name="facebookButton">#3464cb</color>
+    <color name="bgBottomNavigation">#292929</color>
+    <color name="black">#000000</color>
+    <color name="orange">#F4C569</color>
+    <color name="white_color_complaint">#ffff</color>
+    <color name="black_color">#000000</color>
+    <color name="gray_color">#b4bfbf</color>
+    <color name="white_color_change_password">#ffffff</color>
+    <color name="black_color_change_password">#000000</color>
+    <color name="verify_code_color_forget_password">#b4bfbf</color>
+    <color name="white_color_forget_password">#ffffff</color>
+    <color name="dotted_color">#000000</color>
+    <color name="vertical_dots_color_complaint">#ffffff</color>
+    <color name="vertical_dots_color">#b4bfbf</color>
+    <color name="et_dots_shape_color">#ffffff</color>
+    <color name="et_dots_stroke_color">#b4bfbf</color>
+</resources>

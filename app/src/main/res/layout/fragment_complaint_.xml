@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color_complaint"
+    android:orientation="vertical"
+    tools:context="com.example.attaurrahman.e_complaint.fragment.Complaint_Fragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white_color_complaint"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_title_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:src="@mipmap/image" />
+
+                    <ImageView
+                        android:id="@+id/iv_logout"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="@dimen/margin_top_iv_logout"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/logout" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_ecomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e_complaint"
+                    android:textAlignment="center"
+                    android:textColor="@color/black_color"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@color/arrow" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_complaint_bg_edittext"
+                        android:background="@drawable/et_dots"
+                        android:cursorVisible="false"
+                        android:focusable="false" />
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/sp_complaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/matarial_spiner_height"
+                        app:ms_arrowColor="@color/arrow" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_top_tv_upload"
+                    android:text="@string/upload"
+                    android:textColor="@color/gray_color"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/fl_image"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_get_pic_cam"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter" />
+
+                        <ImageView
+                            android:id="@+id/iv_pic_cam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/cam" />
+
+                        <ImageView
+                            android:id="@+id/iv_pic_cross"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="45dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/delete"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/vertical_dots" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_video"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/iv_video_cam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/vid_cam" />
+
+                        <VideoView
+                            android:id="@+id/vv_video_cam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_video_cross"
+                            android:layout_width="45dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="@dimen/margin_bottom_iv_video_cross"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/delete"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/play"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_pause"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pause"
+                            android:visibility="gone" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_description_height"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/et_dots"
+                    android:focusable="false"
+                    android:gravity="left"
+                    android:hint="@string/description_or_link"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="@dimen/text_padding_left"
+                    android:paddingTop="@dimen/text_padding_top"
+                    android:textColor="@color/gray_color"
+                    android:textColorHint="@color/gray_color" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_complaint_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_top_btn_comaplait_submit"
+                        android:background="@mipmap/button"
+                        android:paddingBottom="@dimen/paddint_bottom"
+                        android:text="SUBMIT"
+                        android:textColor="@color/white_color_complaint"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

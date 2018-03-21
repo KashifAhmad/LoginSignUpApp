@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item>
+    <shape>
+        <solid android:color="@color/et_dots_shape_color" />
+        <stroke
+            android:dashGap="@dimen/et_dots_stroke_dash_gap"
+            android:dashWidth="1.5dp"
+            android:width="@dimen/et_dots_stroke_width"
+            android:color="@color/et_dots_stroke_color" />
+        <padding
+            android:bottom="@dimen/et_dots_padding_left_right_top_bottom"
+            android:left="@dimen/et_dots_padding_left_right_top_bottom"
+            android:right="@dimen/et_dots_padding_left_right_top_bottom"
+            android:top="@dimen/et_dots_padding_left_right_top_bottom" />
+        <corners
+            android:bottomRightRadius="@dimen/et_dots_corners_radius_bottomRight_bottomLeft_topLeft_topRight"
+            android:bottomLeftRadius="@dimen/et_dots_corners_radius_bottomRight_bottomLeft_topLeft_topRight"
+            android:topLeftRadius="@dimen/et_dots_corners_radius_bottomRight_bottomLeft_topLeft_topRight"
+            android:topRightRadius="@dimen/et_dots_corners_radius_bottomRight_bottomLeft_topLeft_topRight"/>
+    </shape>
+</item>
+</layer-list>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_margin">60dp</dimen>
+    <dimen name="text_padding_left">10sp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="widget_height">40dp</dimen>
+    <dimen name="edit_text_top_margin">8dp</dimen>
+    <dimen name="edit_text_left_right_margin">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tabs_text_padding">5dp</dimen>
+    <dimen name="tab_text_size">10dp</dimen>
+    <dimen name="margin_top_iv_logout">25dp</dimen>
+    <dimen name="margin_top_complaint_bg_edittext">20dp</dimen>
+    <dimen name="matarial_spiner_height">80dp</dimen>
+    <dimen name="margin_top_tv_upload">10dp</dimen>
+    <dimen name="et_description_height">100dp</dimen>
+    <dimen name="margin_bottom_iv_video_cross">45dp</dimen>
+    <dimen name="margin_top_btn_comaplait_submit">10dp</dimen>
+    <dimen name="paddint_bottom">30dp</dimen>
+    <dimen name="h_v_width_change_password">100dp</dimen>
+    <dimen name="h_v_height_change_password">2dp</dimen>
+    <dimen name="padding_ll_change_password">25dp</dimen>
+    <dimen name="text_padding_top">10dp</dimen>
+    <dimen name="margin_left_ll_forget_password">20dp</dimen>
+    <dimen name="margin_right_ll_forget_password">20dp</dimen>
+    <dimen name="margin_top_ll_forget_password">40dp</dimen>
+    <dimen name="et_code_margin_right">10dp</dimen>
+    <dimen name="tv_margin_right_forget_password">25dp</dimen>
+    <dimen name="tv_margin_top_or">5dp</dimen>
+    <dimen name="dotted_dasht_width">2px</dimen>
+    <dimen name="dotted_dash_gap">5px</dimen>
+    <dimen name="radius_round_corner_button_orange">5dp</dimen>
+    <dimen name="vertical_dots_dash_gap">1dp</dimen>
+    <dimen name="vertical_dots_dash_width">1dp</dimen>
+    <dimen name="vertical_dots_width">1dp</dimen>
+    <dimen name="radius_round_corners_button_light_red">5dp</dimen>
+    <dimen name="squreline_corners_radius">2dp</dimen>
+    <dimen name="squreline_padding_left_right_top_bottom">10dp</dimen>
+    <dimen name="et_dots_stroke_dash_gap">2dp</dimen>
+    <dimen name="et_dots_stroke_width">1dp</dimen>
+    <dimen name="et_dots_padding_left_right_top_bottom">5dp</dimen>
+    <dimen name="et_dots_corners_radius_bottomRight_bottomLeft_topLeft_topRight">3dp</dimen>
+
+
+</resources>

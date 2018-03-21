@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.attaurrahman.e_complaint.fragment.RegistrationTabFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/image"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_ecomplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/e_complaint"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/widget_margin"
+        android:layout_marginRight="@dimen/widget_margin"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_string"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register"
+                android:textAllCaps="true" />
+
+            <View
+                android:id="@+id/view_register"
+                android:layout_width="70dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorOrange" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/et_register_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/edit_text_left_right_margin"
+                    android:layout_marginStart="@dimen/edit_text_left_right_margin"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/dotted"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/text_padding_left"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/et_registration_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/edit_text_left_right_margin"
+                    android:layout_marginStart="@dimen/edit_text_left_right_margin"
+                    android:layout_marginTop="@dimen/edit_text_top_margin"
+                    android:background="@drawable/dotted"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/text_padding_left"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/et_registration_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/edit_text_left_right_margin"
+                    android:layout_marginStart="@dimen/edit_text_left_right_margin"
+                    android:layout_marginTop="@dimen/edit_text_top_margin"
+                    android:background="@drawable/dotted"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/text_padding_left"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry" />
+
+                <EditText
+                    android:id="@+id/et_registration_retypePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/edit_text_left_right_margin"
+                    android:layout_marginStart="@dimen/edit_text_left_right_margin"
+                    android:layout_marginTop="@dimen/edit_text_top_margin"
+                    android:background="@drawable/dotted"
+                    android:hint="@string/retypePassword"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    android:paddingStart="@dimen/text_padding_left"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry" />
+
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_height"
+                    android:layout_marginEnd="@dimen/widget_margin"
+                    android:layout_marginStart="@dimen/widget_margin"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/round_corners_button_light_red_view"
+                    android:text="@string/register"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

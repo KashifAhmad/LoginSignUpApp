@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <solid android:color="@color/vertical_dots_color_complaint" />
+            <stroke
+                android:dashGap="@dimen/vertical_dots_dash_gap"
+                android:dashWidth="@dimen/vertical_dots_dash_width"
+                android:width="@dimen/vertical_dots_width"
+                android:color="@color/vertical_dots_color" />
+
+        </shape>
+    </item>
+</layer-list>

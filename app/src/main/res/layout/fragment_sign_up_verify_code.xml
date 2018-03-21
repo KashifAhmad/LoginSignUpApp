@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.attaurrahman.e_complaint.fragment.SignUpVerifyCodeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/image"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_ecomplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/e_complaint"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="@color/arrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_verify_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/widget_margin"
+        android:layout_marginRight="@dimen/widget_margin"
+        android:layout_marginTop="@dimen/edit_text_top_margin"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Code Send To Email"
+            android:textAllCaps="true" />
+
+        <View
+            android:id="@+id/verfy"
+            android:layout_width="190dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorOrange" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/ll_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_code_num1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/squreline"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:textColor="#b4bfbf" />
+
+                    <EditText
+                        android:id="@+id/et_code_num2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/squreline"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:textColor="#b4bfbf" />
+
+                    <EditText
+                        android:id="@+id/et_code_num3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/squreline"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:textColor="#b4bfbf" />
+
+                    <EditText
+                        android:id="@+id/et_code_num4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/squreline"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:textAlignment="center"
+                        android:textColor="#b4bfbf" />
+
+                    <EditText
+                        android:id="@+id/et_code_num5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/squreline"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:textAlignment="center"
+                        android:textColor="#b4bfbf" />
+
+                    <EditText
+                        android:id="@+id/et_code_num6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/squreline"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="1"
+                        android:imeOptions="actionDone"
+                        android:textAlignment="center"
+                        android:textColor="#b4bfbf" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_verify_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_height"
+                    android:layout_marginEnd="@dimen/widget_margin"
+                    android:layout_marginStart="@dimen/widget_margin"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:background="@drawable/round_corners_button_orange_view"
+                    android:text="@string/verify"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

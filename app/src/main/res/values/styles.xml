@@ -1,0 +1,38 @@
+
+<resources>
+
+    <!-- Base application theme. -->
+ 
+	 <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="boldText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#0000</item>
+    </style>
+    <style name="normalText">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#C0C0C0</item>
+    </style>
+
+        <style name="CustomLoading" parent="android:Theme.DeviceDefault.Dialog">
+            <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+            <item name="DialogTitleText">Loding</item>
+            <item name="DialogSpotColor">@android:color/holo_orange_dark</item>
+            <item name="android:background">@color/orange</item>
+            <item name="DialogSpotCount">4</item>
+        </style>
+    <style name="CustomUploading" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Uploading</item>
+        <item name="DialogSpotColor">@android:color/holo_orange_dark</item>
+        <item name="android:background">@color/orange</item>
+        <item name="DialogSpotCount">4</item>
+
+    </style>
+
+
+</resources>
